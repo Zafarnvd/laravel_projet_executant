@@ -97,4 +97,8 @@ class GallerieController extends Controller
         $galleries->delete();
         return back();
     }
+
+    public function __construct(){
+        $this->middleware('auth');
+    }
 }

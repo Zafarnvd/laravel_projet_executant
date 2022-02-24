@@ -27,6 +27,7 @@
                                 Users</a>
                         </li>
                         @endadmin
+                        @admin
                         <li>
                             <a href="/avatars"
                                 class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200"
@@ -39,6 +40,7 @@
                                 </svg>
                                 Avatars</a>
                         </li>
+                        @admin
                         <li>
                             <a href="/categories"
                                 class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200"
@@ -52,8 +54,10 @@
                                 </svg>
                                 Categories</a>
                         </li>
+                        @endadmin
+                        @admin
                         <li>
-                            <a href="#"
+                            <a href="/images"
                                 class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200"
                                 hover:text-indigo-600>
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -64,6 +68,7 @@
                                 </svg>
                                 Images</a>
                         </li>
+                        @endadmin
                         <li>
                             <a href="#"
                                 class="flex items-centerx text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">

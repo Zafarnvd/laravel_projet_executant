@@ -96,4 +96,8 @@ class AvatarController extends Controller
         $avatar->delete();
         return back();
     }
+
+    public function __construct(){
+        $this->middleware('isAdmin');
+    }
 }

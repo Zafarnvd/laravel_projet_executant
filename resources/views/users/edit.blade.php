@@ -8,7 +8,7 @@
             <div class="w-96 mx-auto bg-white rounded shadow">
                 <div class="mx-16 py-4 px-8 text-black text-xl font-bold border-b border-grey-500">Student Application
                 </div>
-                <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="{{route('edit/update',$user->id )}}" method="POST">
+                <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="{{route('edit.update',$user->id )}}" method="POST">
                     @csrf
                     <div class="mb-4">
                         <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Lastname</label>

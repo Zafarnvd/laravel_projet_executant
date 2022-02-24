@@ -93,4 +93,8 @@ class ImageController extends Controller
         $images->delete();
         return back();
     }
+
+    public function __construct(){
+        $this->middleware('isAdmin');
+    }
 }

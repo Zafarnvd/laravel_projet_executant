@@ -92,4 +92,8 @@ class CategoryController extends Controller
         $category -> delete();
         return back();
     }
+
+    public function __construct(){
+        $this->middleware('isAdmin');
+    }
 }
