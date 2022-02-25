@@ -9,7 +9,7 @@
             <div class="py-12 px-10 w-1/4 flex flex-auto flex-col">
                 <div class="flex items-center space-x-4 p-2 bg-indigo-600 rounded-md">
                     <div>
-                        <p class="text-lg text-white font-semibold">Dashboard</p>
+                        <a href="/dashboard" class="text-lg text-white font-semibold">Dashboard</a>
                     </div>
                 </div>
                 <div class="mt-8">
@@ -40,6 +40,7 @@
                                 </svg>
                                 Avatars</a>
                         </li>
+                        @endadmin
                         @admin
                         <li>
                             <a href="/categories"

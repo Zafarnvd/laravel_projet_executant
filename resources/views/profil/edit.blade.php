@@ -8,7 +8,7 @@
             <div class="w-96 mx-auto bg-white rounded shadow">
                 <div class="mx-16 py-4 px-8 text-black text-xl font-bold border-b border-grey-500">Student Application
                 </div>
-                <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="{{route('edit/update',Auth::id() )}}" method="POST">
+                <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="{{route('edit.update',Auth::id() )}}" method="POST">
                     @csrf
                     <div class="mb-4">
                         <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Lastname</label>
@@ -40,7 +40,7 @@
                         <label class="block text-gray-700 text-sm font-bold mb-2" for="role">Role</label>
                         <select
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="role" type="select" placeholder="Role" name="role" value="{{Auth::user()->role}}">
+                            id="role" type="select" placeholder="Role" name="role_id" value="{{Auth::user()->role}}">
                             @foreach ($roles as $item)
                             <option value="{{$item->id}}">{{$item->name}}</option>
                                 
